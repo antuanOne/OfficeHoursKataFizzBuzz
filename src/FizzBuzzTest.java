@@ -21,4 +21,18 @@ public class FizzBuzzTest  {
         assertEquals("Buzz", fizzBuzz.getFizzBuzzResult(5));
     }
 
+    @Test
+    public void testWhenValueIsMultipleOfTreeAndFive() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("FizzBuzz",fizzBuzz.getFizzBuzzResult(15));
+
+    }
+
+    @Test
+    public void testWhenValueIsNotAMultipleOfTreeOrFive() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("98",fizzBuzz.getFizzBuzzResult(98));
+
+    }
+
 }
