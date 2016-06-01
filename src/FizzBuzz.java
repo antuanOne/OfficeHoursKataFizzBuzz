@@ -4,6 +4,9 @@
 public class FizzBuzz {
 
     public String getFizzBuzzResult(int numberToCheck){
+        if((numberToCheck % 5) ==0){
+            return "Buzz";
+        } else
         if((numberToCheck % 3) ==0){
             return "Fizz";
         }else {
